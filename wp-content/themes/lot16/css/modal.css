@@ -1,0 +1,838 @@
+/*=======================================*/
+/*Popup - Register form*/
+/*=======================================*/
+.modal-overlay{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: none;
+}
+
+#holderPopupBooking{
+    position: fixed;
+    z-index: 10001;
+    max-width: 1200px;
+    /*height: 85%;*/
+    height: 95vh;
+    display: none;
+    background: #D2EA8E;
+    color: #1B1B1B;
+    /*background: #DED689;*/
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    transform: translate(0,0);
+    /*width: auto; */
+    left: 0; 
+    right: 0;
+    /*height: auto; */
+    /*top: 5%; */
+    top: -100%;
+    bottom: 0;
+    border: solid 1px #707070;
+}
+
+.contentPopup{
+    max-width: 1015px;
+    margin: 0 auto;
+}
+
+.registerForm .contentPopup{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.content_body{
+    position: relative;
+    height: calc(100vh - 250px);
+    display: block;
+    /*background: green;*/
+    overflow-y: auto;
+    /*
+    max-height: calc(100vh - 220px);
+    overflow-y: auto;
+    background: red;
+    */
+}
+
+#holderPopupBooking.registerForm{
+    height: 100vh !important;
+}
+.registerForm .content_body{
+    height: calc(100vh - 110px);
+}
+
+/* Modal 2 floorplans */
+#holderPopupBooking.floorplans{
+    top: 5%;
+    max-width: 90rem !important;  
+    background: #fff !important;
+    
+}
+
+.floorplans .contentPopup{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+#holderPopupBooking.floorplans #content_floorplan{
+    
+    text-align: center;
+}
+
+#holderPopupBooking.floorplans #content_floorplan img{
+    margin: 0 auto;
+}
+/* ends modal 2 floorplans */
+
+.holderTitleModal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+   
+}
+
+
+
+/* Play Video  */
+/* Modal 3 Play Video */
+#holderPopupBooking.playvideo{
+    top: 2.5%;
+    max-width: 85% !important;  
+    background: transparent;
+    border: none;
+    
+}
+#holderPopupBooking.playvideo .contentPopup{
+    max-width: 100%;
+}
+
+.playvideo{
+    position: relative;
+}
+.playvideo .content_body{
+    
+    height: calc(100vh - 20px);
+}
+.playvideo .holderTitleModal{
+    padding-top: 0rem;
+}
+
+.playvideo .holderTitleModal{
+   position: absolute;
+   right: -0.125rem;
+   background: #fff;
+   padding: 5px;
+   z-index: 50;
+}
+#holderPopupBooking.playvideo {
+    
+}
+
+/* End Play video */
+
+
+.holderTitleModal,
+#holder_form_booking{
+    margin: 0 auto;
+}
+
+.holderTitleModal .title{
+    font-size: 2.5rem;
+    font-family: 'didotregular';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 0.5625rem;
+    padding-bottom: 0.5625rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#holderPopupBooking .title span {
+    font-style: italic;
+}
+
+
+#holderPopupBooking .title{
+    margin-left: 1.25rem;
+}
+
+/*
+.gform_wrapper.gravity-theme .gform_fields{
+    grid-column-gap: 0% !important;
+}
+*/
+.gchoice label{
+    display: inline-block;
+    max-width:unset;
+}
+.option_left{padding-right: .625rem;}
+.option_right{padding-left: .625rem;}
+
+.submitting label{
+    font-size: .875rem !important; 
+}
+
+/*
+=====================================================================
+Form Style 
+=======================================================================
+*/
+/* contact form 7 style*/
+/*
+=====================================================================
+Form Style 
+=======================================================================
+*/
+/*
+#holderPopupBooking .content_body .holderCheckboxs{
+    margin-top: 30px;
+}
+#holderPopupBooking .content_body input[type="checkbox"]{
+    width: 55px;
+    height: 55px;
+    border-radius: 0px;
+    vertical-align: middle;
+}
+
+#holderPopupBooking .content_body .holderCheckboxs label{
+    display: flex;
+    align-items: center;
+}
+#holderPopupBooking .content_body .holderCheckboxs label span{
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+
+#holder_form_booking .fields{
+    max-width: 876px;
+    margin: 0 auto;
+}
+
+
+#holder_form_booking .infoForm{
+    padding-top: 35px;
+}
+#holder_form_booking .holderFields{
+    margin-top: 35px;
+}
+
+
+#holder_form_booking  input[type=text],
+#holder_form_booking  input[type=tel],
+#holder_form_booking  input[type=email],
+#holder_form_booking  input[type=number],
+#holder_form_booking  textarea, 
+#holder_form_booking  select{
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+    display: block;
+    border: none;
+    font-family: 'gothambook';
+    font-size: 16px;
+    color: #404040;
+    background: transparent;
+}
+#holder_form_booking  textarea{
+    margin-top: 20px;
+}
+#holder_form_booking  select{
+    background: #CECECE;
+    text-align: center;
+}
+
+#holder_form_booking  select option{
+    background: #DED689;
+    border: solid 2px #404040;
+    padding: 8px;
+}
+#holder_form_booking .asField{
+    padding: 7px 7px 7px 0px;
+    color: #404040;
+    display: inline-block;
+
+}
+
+#holder_form_booking ::placeholder { 
+    color: #404040;
+    opacity: 1;
+  }
+  
+#holder_form_booking :-ms-input-placeholder { 
+    color: #404040;
+  }
+  
+#holder_form_booking ::-ms-input-placeholder {
+    color: #404040;
+  }
+
+
+#holder_form_booking input:focus, #holder_form_booking textarea:focus, #holder_form_booking select:focus{
+    outline: none;
+}
+
+#holder_form_booking {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    margin-bottom: 5px;
+    gap: 10px;
+    
+    align-items: center;
+}
+
+#holder_form_booking .setBorder{
+    border-bottom: solid 1px #707070;
+}
+
+
+#holder_form_booking  .column {
+    
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+#holder_form_booking .holderSelect.pt{
+    padding-top: 20px;
+}
+#holder_form_booking .holderSelect{
+    margin-bottom: 20px;
+}
+
+#holder_form_booking  .column .radio{
+    margin-right: 15px;
+    
+}
+
+#holder_form_booking  #sendMessage{
+    width: auto;
+    background: #404040;
+    color: #fff;
+    padding: 15px;
+    border: transparent;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#holder_form_booking  #sendMessage:disabled{
+    background:  #7e7e7e;
+    color: #fff;
+}
+
+
+#holder_form_booking .select {
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    
+    color:black;
+    border:1px solid #ccc;
+    width: 100%;
+}
+#holder_form_booking .styledSelect {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:#E2E6E0;
+    padding:0 10px;
+    padding-top: 8px;
+    text-align: center;
+    
+}
+#holder_form_booking .styledSelect:after {
+    content:"";
+    width:0;
+    height:0;
+    border:5px solid transparent;
+    border-color:black transparent transparent transparent;
+    position:absolute;
+    top:15px;
+    right:6px;
+}
+#holder_form_booking .styledSelect:active, .styledSelect.active {
+    background-color:#eee;
+}
+#holder_form_booking .options {
+    display:none;
+    position:absolute;
+    top:100%;
+    right:-1px;
+    left:-1px;
+    z-index:999;
+    margin:0 0;
+    padding:0 0;
+    list-style:none;
+    border:1px solid #ccc;
+    background-color:white;
+    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    max-height: 173px;
+    overflow-y: auto;
+    
+    
+}
+#holder_form_booking .options li {
+
+    margin:0 0;
+    padding:10px 10px;
+    border-bottom: solid 1px #707070;
+    text-align: center;
+    background: #fff
+   
+}
+#holder_form_booking .options li:hover {
+    background-color:#373536;
+    color:white;
+    
+}
+
+#holder_form_booking .is_realtor span:first-child{
+    margin-left: -5px;
+}
+
+#holder_form_booking .wpcf7-list-item{
+    margin-left: 0px;
+}
+
+#holder_form_booking .wpcf7-list-item span{
+    margin-right: 25px;
+}
+
+#holder_form_booking #extend-wpcf7-spinner{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #holder_form_booking  {
+        flex-direction: column;
+        align-items:unset;
+    }
+
+    #holder_form_booking .setBorder:not(.inputRadio) {
+        border-bottom: none;
+    }
+
+    #holder_form_booking  input[type=text],
+    #holder_form_booking  input[type=email],
+    #holder_form_booking  input[type=tel],
+    #holder_form_booking  textarea{
+        border-bottom: solid 1px #707070;
+    }
+    #holder_form_booking{
+        padding-right: 15px;
+    }
+
+    #holder_form_booking .holderSelect {
+        margin-bottom: 10px;
+    }
+
+    #holder_form_booking #sendMessage{
+        width: 100%;
+    }
+
+    #holderPopupBooking .title{
+        margin-left: 0em;
+    }
+}
+*/
+
+/* After submit*/
+
+/*
+.bgSentMailOk{
+    background: #DED689 !important;
+    color: #404040;
+}
+
+.bgSentMailOk .title  {
+    display: none;
+}
+
+.bgSentMailOk #holderLogoSentForm{
+    display: block;
+}
+
+#holderPopupBooking:not(.bgSentMailOk) #holderLogoSentForm{
+   display: none;
+}
+
+.bgSentMailOk #holderLogoSentForm{
+    display: block;
+    text-align: center;
+    padding: 100px 25px 25px 25px;
+}
+
+.bgSentMailOk .wpcf7 form .wpcf7-response-output{
+    border: none !important;
+    font-size: 31px;
+    line-height: 1;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+*/
+
+
+/*
+/*Gravity style*/
+
+#holderPopupBooking .content_body .holderCheckboxs{
+    margin-top: 30px;
+}
+#holderPopupBooking .content_body input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    border-radius: 0px;
+    vertical-align: middle;
+}
+
+#holderPopupBooking .content_body .holderCheckboxs label{
+    display: flex;
+    align-items: center;
+}
+#holderPopupBooking .content_body .holderCheckboxs label span{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+
+#holder_form_booking .fields{
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: .9375rem;
+    margin: 0 auto;
+}
+
+
+#holder_form_booking .infoForm{
+    padding-top: 35px;
+}
+#holder_form_booking .holderFields{
+    margin-top: 35px;
+}
+
+
+#holder_form_booking .gform_fields  input[type=text],
+#holder_form_booking .gform_fields input[type=email],
+#holder_form_booking .gform_fields input[type=tel],
+#holder_form_booking .gform_fields  input[type=number],
+#holder_form_booking .gform_fields  textarea, 
+#holder_form_booking .gform_fields  select{
+    width: 100%;
+    padding: 10px  10px 10px 10px;
+    display: block;
+    border: solid 1px #1B1B1B;
+    
+    font-family: 'montserratmedium';
+    font-size: 16px;
+    color: #404040;
+    background: none;
+   
+}
+#holder_form_booking .gform_fields  .option_right{
+    padding-left: 0px;
+}
+
+.submitting  .gfield-choice-input+label{
+   max-width: calc(100% - 50px) !important;
+}
+
+#holder_form_booking  .gform_footer, #holder_form_booking .gform_page_footer {
+  
+    text-align: center;
+   
+}
+
+#holder_form_booking .gform_wrapper.gravity-theme .gfield_label {
+    font-weight: normal;
+}
+
+#holder_form_booking  .gform_fields textarea{
+   
+}
+#holder_form_booking  select{
+    background: #CECECE;
+    text-align: left;
+}
+
+#holder_form_booking  select option{
+    background: #E2E6E0;
+    border: solid 2px #404040;
+    padding: 8px;
+}
+#holder_form_booking .asField{
+    padding: 7px;
+    color: #404040;
+    display: inline-block;
+
+}
+
+/*
+#holder_form_booking  input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #DED689;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #000;
+}
+
+#holder_form_booking input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #404040;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #fff;
+}
+*/
+
+#holder_form_booking .option_right .gfield_description,
+#holder_form_booking .option_left .gfield_description{
+    display: none;
+}
+
+#holder_form_booking .radio,
+#holder_form_booking .radio input,
+#holder_form_booking .radio label{
+    cursor: pointer;
+}
+
+#holder_form_booking ::placeholder {
+    color: #404040;
+}
+  
+#holder_form_booking ::-ms-input-placeholder {
+    color: #404040;
+}
+
+#holder_form_booking input:focus, #holder_form_booking textarea:focus, #holder_form_booking select:focus{
+    outline: none;
+}
+
+#holder_form_booking {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    margin-bottom: 5px;
+    gap: 10px;
+    
+    align-items: center;
+}
+
+#holder_form_booking .setBorder{
+    border-bottom: solid 1px #707070;
+}
+
+
+#holder_form_booking  .column {
+    
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+#holder_form_booking  .column .radio{
+    margin-right: 15px;
+    
+}
+
+#holder_form_booking  #sendMessage,
+#holder_form_booking  input[type='submit']{
+    background: #1B1B1B;
+    padding: .9375rem 1.5625rem;
+    border: transparent;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 auto;
+    font-family: 'montserratmedium';
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+/*
+#holder_form_booking .select {
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    
+    color:#404040;
+    border:1px solid #ccc;
+    width: 100%;
+}
+
+
+#holder_form_booking .styledSelect {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: #CECECE; 
+    padding:0 10px;
+    padding-top: 8px;
+    text-align: center;
+    
+}
+
+#holder_form_booking .styledSelect:after {
+    content:"";
+    width:0;
+    height:0;
+    border:5px solid transparent;
+    border-color:black transparent transparent transparent;
+    position:absolute;
+    top:15px;
+    right:6px;
+}
+
+#holder_form_booking .styledSelect:active, .styledSelect.active {
+    background-color:#eee;
+}
+
+#holder_form_booking .options {
+    display:none;
+    position:absolute;
+    top:100%;
+    right:-1px;
+    left:-1px;
+    z-index:999;
+    margin:0 0;
+    padding:0 0;
+    list-style:none;
+    border:1px solid #ccc;
+    background-color:white;
+    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    max-height: 173px;
+    overflow-y: auto;
+    
+    
+}
+#holder_form_booking .options li {
+
+    margin:0 0;
+    padding:10px 10px;
+    border-bottom: solid 1px #707070;
+    text-align: center;
+    background: #DED689; 
+   
+}
+#holder_form_booking .options li:hover {
+    background-color:#373536;
+    color:white;
+}
+
+#holder_form_booking .options li.selected{
+    background-color: #fdfdfd;
+    color: #373536;
+    cursor: text;
+}
+*/
+
+@media (max-width: 1024px) {
+    #holderPopupBooking .title{
+        margin-left: 0rem;
+    }
+}
+@media (max-width: 768px) {
+    
+    .option_left{
+        padding-right: 0rem;
+    }
+    
+    .option_right{
+        padding-left: 0rem;
+    }
+}
+
+/*======================================================*/
+/* Form in pages */
+/*======================================================*/
+.global_register_form{
+    padding-bottom: 5.125rem;
+}
+
+.global_register_form  .col_form #holder_form_booking .gform_fields  input[type=text],
+.global_register_form  .col_form #holder_form_booking .gform_fields input[type=email],
+.global_register_form  .col_form #holder_form_booking .gform_fields input[type=tel],
+.global_register_form  .col_form #holder_form_booking .gform_fields  input[type=number],
+.global_register_form  .col_form #holder_form_booking .gform_fields  textarea, 
+.global_register_form  .col_form #holder_form_booking .gform_fields  select{
+    width: 100%;
+    padding: 10px  10px 10px 10px;
+    display: block;
+    border: solid 1px #fff;
+    
+    font-family: 'montserratmedium';
+    font-size: 16px;
+    color: #fff;
+    background: none;
+   
+}
+.global_register_form #holder_form_booking  select option{
+    background: #1B1B1B;;
+    border: solid 2px #fff;
+    padding: 8px;
+    color: #fff;
+}
+
+.global_register_form .gfield-choice-input:checked {
+    accent-color: #d2ea8e;
+    border: none;
+}
+
+.global_register_form .gfield-choice-input {
+    height: 1.3em;
+    width: 1.3em;
+    margin-right: 5px;
+}
+
+.global_register_form  .col_form #holder_form_booking #sendMessage,
+.global_register_form  .col_form #holder_form_booking   input[type='submit']{
+    background: #fff;
+    padding: .9375rem 1.5625rem;
+    border: transparent;
+    cursor: pointer;
+    color: #1B1B1B;
+    margin: 0 auto;
+    font-family: 'montserratmedium';
+    text-transform: uppercase;
+    font-size: 16px;
+    
+}
+
+
+.global_register_form  .col_form #holder_form_booking  .gform_footer, .global_register_form  .col_form #holder_form_booking .gform_page_footer {
+  
+    text-align: right !important;
+   
+}
+

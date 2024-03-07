@@ -1,0 +1,129 @@
+.noScrollbar{
+    overflow: hidden;  
+}
+
+/* Modal 2 floorplans */
+#holderFoorPlanPopup{
+    position: fixed;
+    z-index: 10001;
+    width: 90%;
+    max-width: 90rem;
+    background: #fff !important;
+    height: 95vh;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contentFoorPlanPopup .closePopup img{
+    padding-right: .6875rem;
+}
+
+
+.contentFoorPlanPopup .title{
+    font-size: 30px;
+    font-family: 'maison_neuemedium';
+    letter-spacing: 2px;
+}
+.contentFoorPlanPopup .closePopup{
+    text-decoration: none;
+    color: #404042;
+    font-weight: 600;
+}
+
+.content_body_floorplan {
+    position: relative;
+    height: calc(95vh - 50px);
+    display: block;
+    overflow-y: auto;
+    text-align: center;
+}
+.content_body_floorplan img{
+    margin: 0 auto;
+}
+
+
+/* ends modal 2 floorplans */
+
+
+
+
+.holderTitleModal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding-top: .625rem;
+}
+
+.floorplans_holder{
+    padding-top: 3.125rem;
+}
+.floorplans_holder .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.25rem;
+    row-gap: 3.5rem;
+}
+.floorplans_holder .grid .child  h3{
+    font-weight: normal;
+    font-size: 1.125rem;
+    padding-top: 16px;
+    padding-bottom: 10px
+}
+.floorplans_holder .grid .child .holder_image {
+    background: #fff;
+    text-align: center;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floorplans_holder .grid .child .holder_image img {
+    max-width: 100%;
+    width: 488px;
+    height: 485px;
+    object-fit: contain;
+}
+
+.floorplans_holder .grid .child .features {
+    display: flex;
+    gap: 0.9375rem;
+    justify-content: space-between;
+    margin-right: 1.875rem;
+    margin-bottom: 0.75rem;
+}
+
+
+
+@media(max-width:1024px)
+{
+    .floorplans_holder .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.25rem;
+        row-gap: 3.5rem;
+    }
+
+    .floorplans_holder .grid .child .holder_image img {
+
+        width: 488px;
+        height: 350px;
+    }
+}
+
+@media(max-width:768px)
+{
+    .floorplans_holder .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        row-gap: 3.5rem;
+    }
+}
+
+
